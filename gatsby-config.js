@@ -7,12 +7,35 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 module.exports = {
   siteMetadata: {
     siteTitleAlt: `Sanakoev Portfolio`,
+    siteTitle: `Sanakoev Portfolio`,
+    // Default title of the page
+    siteHeadline: `Sanakoev's selected work`,
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://rsportfolio.co.uk/`,
+    // Used for SEO
+    siteDescription: `Sanakoev's selected work`,
+    // Will be set on the <html /> tag
+    siteLanguage: `en`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@russo`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
-      options: {},
+      options: {
+        name: `Sanakoev Portfolio`,
+        short_name: `RS P`,
+        description: `Selected work`,
+        location:"London",
+        formatString:	"string",
+        socialMedia: [
+          { title: `PDF Design Portfolio`, href: `https://drive.google.com/file/d/1rBW4mZP-8o2zP2W_0Pfj3uQrEuBk7A_V/view?usp=sharing` },
+          { title: `PDF Technical Portfolio`, href: `https://drive.google.com/file/d/1CKrLGptT2q1ZWCNAOsmEg31RKB4Jwbn4/view?usp=sharing` },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -25,17 +48,17 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Sanakoev Portfolio`,
-        short_name: `Emilia`,
-        description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI.`,
+        short_name: `RS P`,
+        description: `Selected work`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#3182ce`,
         display: `standalone`,
         location:"London",
-        socialMedia: 
-        
-        "[{ title: `PDF Design Portfolio`, href: `https://drive.google.com/file/d/1rBW4mZP-8o2zP2W_0Pfj3uQrEuBk7A_V/view?usp=sharing` }, { title: `PDF Technical Portfolio`, href: `https://drive.google.com/file/d/1CKrLGptT2q1ZWCNAOsmEg31RKB4Jwbn4/view?usp=sharing` }]"
-        
+        socialMedia: [
+          { title: `PDF Design Portfolio`, href: `https://drive.google.com/file/d/1rBW4mZP-8o2zP2W_0Pfj3uQrEuBk7A_V/view?usp=sharing` },
+          { title: `PDF Technical Portfolio`, href: `https://drive.google.com/file/d/1CKrLGptT2q1ZWCNAOsmEg31RKB4Jwbn4/view?usp=sharing` },
+        ],
         icons: [
           {
             src: `/android-chrome-192x192.png`,
