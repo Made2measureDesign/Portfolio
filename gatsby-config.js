@@ -24,13 +24,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Emilia - @lekoarts/gatsby-theme-emilia`,
+        name: `Sanakoev Portfolio`,
         short_name: `Emilia`,
         description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI.`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#3182ce`,
         display: `standalone`,
+        location:"London",
+        socialMedia: 
+        
+        "[{ title: `PDF Design Portfolio`, href: `https://drive.google.com/file/d/1rBW4mZP-8o2zP2W_0Pfj3uQrEuBk7A_V/view?usp=sharing` }, { title: `PDF Technical Portfolio`, href: `https://drive.google.com/file/d/1CKrLGptT2q1ZWCNAOsmEg31RKB4Jwbn4/view?usp=sharing` }]"
+        
         icons: [
           {
             src: `/android-chrome-192x192.png`,
