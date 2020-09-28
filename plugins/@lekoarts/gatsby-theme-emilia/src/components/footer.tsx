@@ -53,7 +53,7 @@ const Footer = () => {
           </Flex>
         </div>
       </Container>
-      {/* {showThemeAuthor && (
+      {showThemeAuthor && (
         <Container
           sx={{
             display: `flex`,
@@ -79,7 +79,8 @@ const Footer = () => {
           <Link aria-label="Link to the theme author's website" href="https://www.lekoarts.de/en">
             LekoArts
           </Link>
-        </Container> */}
+        </Container>
+      )}
     </Box>
   )
 }

@@ -31,6 +31,7 @@ module.exports = {
         description: `Selected work`,
         location:"London",
         formatString:	"dddd",
+        showThemeAuthor:false,
         socialMedia: [
           { title: `PDF Design Portfolio`, href: `https://drive.google.com/file/d/1rBW4mZP-8o2zP2W_0Pfj3uQrEuBk7A_V/view?usp=sharing` },
           { title: `PDF Technical Portfolio`, href: `https://drive.google.com/file/d/1CKrLGptT2q1ZWCNAOsmEg31RKB4Jwbn4/view?usp=sharing` },
