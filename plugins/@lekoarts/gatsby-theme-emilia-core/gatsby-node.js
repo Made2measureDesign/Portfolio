@@ -218,8 +218,6 @@ exports.createPages = async ({ actions, graphql, reporter }, themeOptions) => {
 
   const projects = result.data.allProject.nodes
 
-  console.log(projects)
-
   projects.forEach((project, index) => {
     const { fileAbsolutePath } = project.parent
 
