@@ -1,2 +1,5 @@
 [[plugins]]
 package = "/plugins/@lekoarts/gatsby-theme-emilia"
+
+[[plugins]]
+package = "/plugins/@lekoarts/gatsby-theme-emilia-core"
