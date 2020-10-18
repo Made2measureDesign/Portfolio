@@ -16,15 +16,25 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^2.20.36",
+    "@mdx-js/mdx": "^1.6.6",
+    "@mdx-js/react": "^1.6.6",
+    "gatsby": "^2.24.80",
     "gatsby-plugin-google-analytics": "^2.1.13",
     "gatsby-plugin-manifest": "^2.2.13",
+    "gatsby-plugin-mdx": "^1.2.25",
     "gatsby-plugin-netlify": "^2.1.11",
     "gatsby-plugin-offline": "^3.0.1",
+    "gatsby-plugin-react-helmet": "^3.3.14",
+    "gatsby-plugin-sharp": "^2.6.19",
     "gatsby-plugin-sitemap": "^2.2.7",
+    "gatsby-plugin-typescript": "^2.4.14",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.10",
+    "gatsby-source-filesystem": "^2.3.19",
+    "gatsby-transformer-sharp": "^2.5.11",
+    "lodash.kebabcase": "^4.1.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "cross-env": "^5.2.1"
