@@ -30,7 +30,7 @@ module.exports = {
         short_name: `RS P`,
         description: `Selected work`,
         location:"London",
-        formatString:	"",
+        formatString:	"dddd",
         showThemeAuthor:false,
         socialMedia: [
           { title: `PDF Design Portfolio`, href: `https://drive.google.com/file/d/1rBW4mZP-8o2zP2W_0Pfj3uQrEuBk7A_V/view?usp=sharing` },
