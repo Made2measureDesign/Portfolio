@@ -20,14 +20,14 @@ const HeaderBackground = () => {
           height: `100%`,
           color: `backgroundPattern`,
           svg: {
-            height: `100%`,
+            // height: `100%`,
             width: `100%`,
           },
         }}
       >
         <BGPattern />
       </div>
-      <div
+      {/* <div
         sx={{
           position: `absolute`,
           top: 0,
@@ -38,7 +38,7 @@ const HeaderBackground = () => {
             isDark ? `0.35` : `0.15`
           }) 100%)`,
         }}
-      />
+      /> */}
     </React.Fragment>
   )
 }

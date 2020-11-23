@@ -30,11 +30,11 @@ const Layout = ({ children }: LayoutProps) => (
           background: theme.colors.text,
           color: theme.colors.background,
         },
-        "@media(max-width: 600px)": {
-          html: {
-            fontSize: `16px`,
-          },
-        },
+        // "@media(max-width: 600px)": {
+        //   html: {
+        //     fontSize: `16px`,
+        //   },
+        // },
       })}
     />
     <SEO />

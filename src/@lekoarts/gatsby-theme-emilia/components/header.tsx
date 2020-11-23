@@ -46,7 +46,7 @@ const Header = () => {
   return (
     <Flex as="header" variant="layout.projectHead">
       <HeaderBackground />
-      <div sx={{ textAlign: `center`, my: 5, zIndex: 10 }}>
+      <div sx={{ textAlign: `center`, my: 5, zIndex: 10, height: "400px", }}>
         <animated.div style={fadeProps}>
           <div
             sx={{

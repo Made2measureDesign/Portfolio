@@ -26,11 +26,11 @@ module.exports = {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
       options: {
-        name: `Sanakoev Portfolio`,
+        name: `DesignRusso`,
         short_name: `RS P`,
         description: `Selected work`,
-        location:"London",
-        formatString:	"dddd",
+        location:"London - Malaga",
+        // formatString:	"yyyy-mm-dd",
         showThemeAuthor:false,
         socialMedia: [
           { title: `PDF Design Portfolio`, href: `https://drive.google.com/file/d/1rBW4mZP-8o2zP2W_0Pfj3uQrEuBk7A_V/view?usp=sharing` },
@@ -41,7 +41,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        trackingId: "G-2JNSGYFEBZ",
       },
     },
     `gatsby-plugin-sitemap`,
@@ -53,7 +53,7 @@ module.exports = {
         description: `Selected work`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#3182ce`,
+        theme_color: `#000000`,
         display: `standalone`,
         location:"London",
         socialMedia: [

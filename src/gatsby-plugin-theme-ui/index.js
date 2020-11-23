@@ -20,7 +20,7 @@ export default merge(tailwind, {
         primary: tailwind.colors.blue[4],
         text: tailwind.colors.gray[4],
         background: tailwind.colors.gray[9],
-        backgroundPattern: `#1D2330`,
+        backgroundPattern: `#1c232e`,
         iconPrimary: tailwind.colors.gray[4],
         iconSecondary: tailwind.colors.gray[1],
         textMuted: tailwind.colors.gray[6],
@@ -42,13 +42,14 @@ export default merge(tailwind, {
     },
     header: {
       position: `relative`,
-      overflow: `hidden`,
+      overflow: `visible`,
       justifyContent: `center`,
     },
     projectHead: {
       position: `relative`,
-      overflow: `hidden`,
+      overflow: `visible`,
       justifyContent: `center`,
+      height: "800px",
     },
     container: {
       px: [3, 4],
