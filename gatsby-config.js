@@ -6,8 +6,8 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Sanakoev Portfolio`,
-    siteTitle: `Sanakoev Portfolio`,
+    siteTitleAlt: `Design Russo`,
+    siteTitle: `Design Russo`,
     // Default title of the page
     siteHeadline: `Sanakoev's selected work`,
     // Will be used to generate absolute URLs for og:image etc.
@@ -41,7 +41,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "G-2JNSGYFEBZ",
+        trackingId: "UA-183073521-1",
       },
     },
     `gatsby-plugin-sitemap`,
