@@ -10,7 +10,7 @@ type Props = {
 
 const ColorModeToggle = ({ isDark, toggle }: Props) => (
   <Flex sx={{ alignItems: `center`, justifyContent: [`center`, `center`, `center`, `flex-end`] }}>
-    <div sx={{ mr: 2 }}>Toggle Mode</div>
+
     <button
       onClick={toggle}
       type="button"
@@ -77,6 +77,7 @@ const ColorModeToggle = ({ isDark, toggle }: Props) => (
         }}
       />
     </button>
+    <div sx={{ mr: 2 }}>Toggle Mode</div>
   </Flex>
 )
 

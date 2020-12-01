@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Heading, Flex } from "theme-ui"
+import { jsx, Heading, Flex, useColorMode } from "theme-ui"
 import { animated, useSpring, config } from "react-spring"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -8,6 +8,7 @@ import HeaderBackground from "./header-background"
 import Location from "../assets/location"
 import SocialMediaList from "./social-media-list"
 import { ChildImageSharpFixed } from "../types"
+import ColorModeToggle from "./colormode-toggle"
 
 type AvatarStaticQuery = {
   file: {
@@ -42,6 +43,14 @@ const Header = () => {
   })
   const fadeProps = useSpring({ config: config.slow, from: { opacity: 0 }, to: { opacity: 1 } })
   const fadeLongProps = useSpring({ config: config.slow, delay: 600, from: { opacity: 0 }, to: { opacity: 1 } })
+
+  const { showThemeAuthor } = useEmiliaConfig()
+  const [colorMode, setColorMode] = useColorMode()
+  const isDark = colorMode === `dark`
+  const toggleColorMode = (e: any) => {
+    e.preventDefault()
+    setColorMode(isDark ? `light` : `dark`)
+  }
 
   return (
     <Flex as="header" variant="layout.projectHead">
@@ -106,11 +115,21 @@ const Header = () => {
             <Location /> {location}
           </Flex>
         </animated.div>
-        <div data-testid="social-header" sx={{ mt: 4, mb: 6, a: { mx: 2 } }}>
+        <div data-testid="social-header" sx={{ mt: 4, mb: 0, a: { mx: 2 } }}>
           <animated.div style={fadeLongProps}>
             <SocialMediaList />
           </animated.div>
         </div>
+        <Flex
+            sx={{
+              mt: 2,
+              justifyContent: `center`,
+              alignItems: `center`,
+              color: `text`,
+            }}
+          >
+          <ColorModeToggle isDark={isDark} toggle={toggleColorMode} />
+          </Flex>
       </div>
     </Flex>
   )
