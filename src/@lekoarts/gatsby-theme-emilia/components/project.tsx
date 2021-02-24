@@ -69,7 +69,7 @@ const Project = ({ data: { project, images }, pageContext: { prev, next } }: Pro
         image={project.cover.childImageSharp.resize.src}
       />
       <HeaderProject title={project.title} description={project.body} areas={project.areas} />
-      <Container sx={{ mt: [`-6rem`, `-6rem`, `-8rem`], maxWidth: "900px" }}>
+      <Container sx={{ mt: [`-6rem`, `-6rem`, `-8rem`], maxWidth: "830px"}}>
         {images.nodes.map((image) => (
           <animated.div key={image.name} style={imageFade}>
             <Img fluid={image.childImageSharp.fluid} alt={image.name} sx={{ mb: [4, 4, 5], boxShadow: `xl` }} />
